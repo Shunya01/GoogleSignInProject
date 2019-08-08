@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F3F9C3522FBC8F3000EFC55 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F9C3422FBC8F3000EFC55 /* ProfileViewController.swift */; };
 		4F63650122FA6E2E00EA6502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63650022FA6E2E00EA6502 /* AppDelegate.swift */; };
 		4F63650322FA6E2E00EA6502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63650222FA6E2E00EA6502 /* ViewController.swift */; };
 		4F63650622FA6E2E00EA6502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F63650422FA6E2E00EA6502 /* Main.storyboard */; };
 		4F63650822FA6E3100EA6502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F63650722FA6E3100EA6502 /* Assets.xcassets */; };
 		4F63650B22FA6E3100EA6502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F63650922FA6E3100EA6502 /* LaunchScreen.storyboard */; };
+		4F63651322FA717300EA6502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F63651222FA717300EA6502 /* GoogleService-Info.plist */; };
+		6697A662FA4005787318EF3E /* Pods_GoogleSignInProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D4DA5E954FD73EA90EC3B7D /* Pods_GoogleSignInProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D4DA5E954FD73EA90EC3B7D /* Pods_GoogleSignInProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleSignInProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3F9C3422FBC8F3000EFC55 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4F6364FD22FA6E2E00EA6502 /* GoogleSignInProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleSignInProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F63650022FA6E2E00EA6502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F63650222FA6E2E00EA6502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		4F63650722FA6E3100EA6502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F63650A22FA6E3100EA6502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F63650C22FA6E3100EA6502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F63651222FA717300EA6502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		778D12B1A02E4169A2595A8A /* Pods-GoogleSignInProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSignInProject.debug.xcconfig"; path = "Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject.debug.xcconfig"; sourceTree = "<group>"; };
+		AA14DFC3E342AFB90DE86F89 /* Pods-GoogleSignInProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSignInProject.release.xcconfig"; path = "Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6697A662FA4005787318EF3E /* Pods_GoogleSignInProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EBAB221EB30EABE22A084BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				778D12B1A02E4169A2595A8A /* Pods-GoogleSignInProject.debug.xcconfig */,
+				AA14DFC3E342AFB90DE86F89 /* Pods-GoogleSignInProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4F6364F422FA6E2E00EA6502 = {
 			isa = PBXGroup;
 			children = (
 				4F6364FF22FA6E2E00EA6502 /* GoogleSignInProject */,
 				4F6364FE22FA6E2E00EA6502 /* Products */,
+				4EBAB221EB30EABE22A084BD /* Pods */,
+				C869DE1369615863C63EDF4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +77,21 @@
 				4F63650022FA6E2E00EA6502 /* AppDelegate.swift */,
 				4F63650222FA6E2E00EA6502 /* ViewController.swift */,
 				4F63650422FA6E2E00EA6502 /* Main.storyboard */,
+				4F3F9C3422FBC8F3000EFC55 /* ProfileViewController.swift */,
 				4F63650722FA6E3100EA6502 /* Assets.xcassets */,
 				4F63650922FA6E3100EA6502 /* LaunchScreen.storyboard */,
 				4F63650C22FA6E3100EA6502 /* Info.plist */,
+				4F63651222FA717300EA6502 /* GoogleService-Info.plist */,
 			);
 			path = GoogleSignInProject;
+			sourceTree = "<group>";
+		};
+		C869DE1369615863C63EDF4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D4DA5E954FD73EA90EC3B7D /* Pods_GoogleSignInProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F63650F22FA6E3100EA6502 /* Build configuration list for PBXNativeTarget "GoogleSignInProject" */;
 			buildPhases = (
+				9B126BE3EEA171548E244A7E /* [CP] Check Pods Manifest.lock */,
 				4F6364F922FA6E2E00EA6502 /* Sources */,
 				4F6364FA22FA6E2E00EA6502 /* Frameworks */,
 				4F6364FB22FA6E2E00EA6502 /* Resources */,
+				DAFC6A9AF47691548524BFC9 /* [CP] Embed Pods Frameworks */,
+				BF67FB9FDFA2ADA2515B35CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,16 +158,77 @@
 				4F63650B22FA6E3100EA6502 /* LaunchScreen.storyboard in Resources */,
 				4F63650822FA6E3100EA6502 /* Assets.xcassets in Resources */,
 				4F63650622FA6E2E00EA6502 /* Main.storyboard in Resources */,
+				4F63651322FA717300EA6502 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B126BE3EEA171548E244A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleSignInProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF67FB9FDFA2ADA2515B35CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAFC6A9AF47691548524BFC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleSignInProject/Pods-GoogleSignInProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F6364F922FA6E2E00EA6502 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3F9C3522FBC8F3000EFC55 /* ProfileViewController.swift in Sources */,
 				4F63650322FA6E2E00EA6502 /* ViewController.swift in Sources */,
 				4F63650122FA6E2E00EA6502 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +374,7 @@
 		};
 		4F63651022FA6E3100EA6502 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778D12B1A02E4169A2595A8A /* Pods-GoogleSignInProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +393,7 @@
 		};
 		4F63651122FA6E3100EA6502 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA14DFC3E342AFB90DE86F89 /* Pods-GoogleSignInProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
